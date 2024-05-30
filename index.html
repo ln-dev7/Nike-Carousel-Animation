@@ -8,23 +8,74 @@
   <title>VITE APP / SCSS / GSAP / TAILWIND</title>
 </head>
 
-<body>
-  <div class="relative w-full h-screen overflow-hidden" id="app">
-    <div class="absolute top-0 w-full flex items-center justify-between py-2 px-6 bg-black text-white font-semibold">
-      <a class="underline underline-offset-2" href="https://x.com/ln_dev7">
-        Code by LN
-      </a>
-      <a class="underline underline-offset-2" href="https://github.com/ln-dev7/">
-        GitHub
-      </a>
-      <a class="underline underline-offset-2" href="#">
-        Figma
-      </a>
+<body class="h-screen overflow-hidden">
+  <div id="app" class="relative w-full h-full">
+    <div class="absolute w-full h-full flex items-center justify-center z-[2] pb-20">
+      <h1 class="text-[400px] title">NIKE</h1>
     </div>
-    <div class="w-full h-full flex items-center justify-center p-4">
-      <h1 className="text-3xl font-bold underline">
-        FUN ANIMATION TEMPLATE
-      </h1>
+    <div class="absolute w-full h-full flex items-center justify-center z-[2]">
+      <img class="absolute nike-1 w-[750px] shrink-0 -rotate-[40deg] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        src="/white.svg" alt="Nike white" />
+      <img class="absolute nike-2 scale-0 w-[800px] shrink-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        src="/green.svg" alt="Nike green" />
+      <img class="absolute nike-3 scale-0 w-[800px] shrink-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        src="/red.svg" alt="Nike red" />
+    </div>
+    <div class="absolute w-full h-full flex items-center justify-start">
+      <img
+        src="/bg-1.svg"
+        class="background w-full h-full shrink-0 object-cover bg-white" alt="bg" />
+      <img
+      src="/bg-2.svg"
+        class="background w-full h-full shrink-0 object-cover bg-green-400" alt="bg" />
+      <img
+      src="/bg-3.svg"
+        class="background w-full h-full shrink-0 object-cover bg-red-400" alt="bg" />
+    </div>
+    <div class="absolute bottom-10 w-full flex items-center justify-between z-10 px-10">
+      <div class="flex flex-col justify-start items-center overflow-hidden h-[220px]">
+        <div class="description flex flex-col items-start gap-4 w-[460px] p-4">
+          <h3 class="uppercase text-4xl bebas-neue">Nike air force 1</h3>
+          <p class="">Lorem ipsum dolor sit amet consectetur. Bibendum nunc pellentesque in
+            tincidunt tortor auctor
+            tellus congue neque. Interdum donec sit egestas quam bibendum elementum</p>
+          <a class="uppercase text-sm bebas-neue cursor-pointer underline underline-offset-2" href="#">See
+            Details</a>
+        </div>
+        <div class="description flex flex-col items-start gap-4 w-[460px] p-4">
+          <h3 class="uppercase text-4xl bebas-neue">
+            Nike air max 90
+          </h3>
+          <p class="">Lorem ipsum dolor sit amet consectetur. Bibendum nunc pellentesque in
+            tincidunt tortor auctor
+            tellus congue neque. Interdum donec sit egestas quam bibendum elementum</p>
+          <a class="uppercase text-sm bebas-neue cursor-pointer underline underline-offset-2" href="#">See
+            Details</a>
+        </div>
+        <div class="description flex flex-col items-start gap-4 w-[460px] p-4">
+          <h3 class="uppercase text-4xl bebas-neue">Nike SB Dunk</h3>
+          <p class="">Lorem ipsum dolor sit amet consectetur. Bibendum nunc pellentesque in
+            tincidunt tortor auctor
+            tellus congue neque. Interdum donec sit egestas quam bibendum elementum</p>
+          <a class="uppercase text-sm bebas-neue cursor-pointer underline underline-offset-2" href="#">See
+            Details</a>
+        </div>
+      </div>
+      <div class="flex items-center gap-10 p-4">
+        <img src="/arrow-left.svg" alt="arrow-left" class="arrow-prev cursor-pointer" />
+        <img src="/arrow-right.svg" alt="arrow-right" class="arrow-next cursor-pointer" />
+      </div>
+    </div>
+    <div class="absolute flex items-center justify-between w-full top-0 p-2 z-10">
+      <img src="/nike.svg" alt="Nike" class="w-32 bg-black p-4" />
+      <div class="flex items-center justify-center gap-3 pr-8">
+        <a class="underline underline-offset-4" href="https://x.com/ln_dev7">Code by LN</a>
+        <span>-</span>
+        <a class="underline underline-offset-4" href="https://github.com/ln-dev7/Nike-Carousel-Animation">GitHub</a>
+        <span>-</span>
+        <a class="underline underline-offset-4"
+          href="https://www.figma.com/design/z73a9JnAW0RjDOjI8QLirw/Nike-Carousel-Animation-(Community)?node-id=0-1&t=lCMFPaegW7qML0U4-1">Figma</a>
+      </div>
     </div>
   </div>
   <script type="module" src="/main.js"></script>
